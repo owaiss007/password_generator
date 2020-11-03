@@ -20,7 +20,7 @@ def password(request):
     for x in range(length):
         thepassword += random.choice(characters)
         x =x+1
-    return render(request, 'generator/password.html', {'password':thepassword})
+    return render(request, 'generator/password.html',{'password':thepassword})
 
 def aboutus(request):
     return render(request, 'generator/aboutus.html')
